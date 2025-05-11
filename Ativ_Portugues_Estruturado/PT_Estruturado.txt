@@ -1,0 +1,405 @@
+Exercício 7 - Estrutura de Decisão
+
+1-    Escreva um algoritmo que receba um número e mostre a sua metade somente quando ela for maior que cinquenta.
+
+Algoritmo_Metade
+
+var Numero : REAL
+var Resultado  : Realdoub
+
+INICIO
+
+Escreva("Digite um número")
+Leia(Numero)
+SE(Numero>50) ENTÃO 
+Resultado(Numero/2)
+Escreva("A metade do Número é:" +Resultado)
+
+FIM-SE
+
+FIM
+
+2-    Crie um algoritmo que receba um número e mostre o número e o seu dobro somente quando o número for maior que noventa e menor que cem.
+
+Algoritmo_Dobro
+
+var Numero : REAL
+var Resultado : REAL
+
+INICIO
+
+Escreva ("Digite um número")
+Leia(Numero)
+SE(90<Numero<100) ENTÃO
+Resultado(Numero*2)
+Escreva("O número e seu dobro é:" +Numero "e" +Resultado)
+
+FIM
+
+3-    Faça um algoritmo que receba um número e mostre a sua quinta parte somente quando ela for menor que cinquenta ou maior que mil. 1000<X<50
+
+Algoritmo_Quinta_Parte
+
+var Numero  : REAL
+var Resultado : REAL
+
+INICIO
+
+Escreva("Digite um número")
+Leia(Numero)
+SE(50>Numero>1000) ENTÃO 
+Resultado(Numero/5)
+Escreva("A quinta parte do Número é:" +Resultado)
+
+FIM-SE
+
+FIM
+
+4-    Elabore um algoritmo que receba um número e mostre o número e o sêxtuplo somente quando o número for maior que noventa.
+
+Algoritmo_Sextuplo
+
+var Numero : REAL
+var Resultado  : CARACTER
+
+INICIO
+
+Escreva("Digite um número")
+Leia(Numero)
+SE(Numero>90) ENTÃO 
+Resultado(Numero*6)
+Escreva("O número e seu sextuplo é:" +Numero "e"+Resultado)
+
+FIM-SE
+
+FIM
+
+5-    Faça um algoritmo que receba um número e mostre o número somente quando o número for par.
+
+Algoritmo_Numero_Par
+
+var Numero : REAL
+var Resultado : REAL
+
+INICIO
+
+Escreva("Digite um número")
+Leia(Numero)
+SE(Numero % 2 = 0) ENTÃO 
+Escreva("O número é:" +Numero)
+
+FIM-SE
+
+FIM
+
+6-    Faça um algoritmo que leia dois números inteiros e determine qual dos dois é maior.
+
+Algoritmo_Dois_Numeros
+
+var Numero1, Numero2 : INTEIRO
+
+INICIO
+
+Escreva("Digite o número 1")
+Leia(Numero1)
+Escreva("Digite o número 2")
+Leia(Numero2)
+SE(Numero1>Numero2) ENTÃO
+Escreva(" O número 1 é o maior: " +Numero1)
+SENÃO
+Escreva("O número 2 é o maior: " +Numero2)
+
+FIM-SE
+
+FIM
+
+7-    Faça um algoritmo que leia três números inteiros e determine qual dos três é maior.
+
+Algoritmo_Tres_Numeros
+
+var Numero1, Numero2, Numero3 : INTEIRO
+
+INICIO
+
+Escreva("Digite o número 1")
+Leia(Numero1)
+Escreva("Digite o número 2")
+Leia(Numero2)
+Escreva("Digite o número 3")
+Leia(Numero3)
+SE(Numero3<Numero1>Numero2) ENTÃO
+Escreva(" O número 1 é o maior: " +Numero1)
+SENÃO
+SE(Numero1<Numero2>Numero3 ENTÃO
+Escreva("O número 2 é o maior: " +Numero2)
+SENÃO
+Escreva("O número 3 é o maior: " +Numero3)
+
+FIM-SE
+
+FIM
+
+8-    Elabore um algoritmo que dada a idade de um nadador classifique-o em uma das seguintes categorias:
+
+·  Infantil A = 5 a 7 anos
+
+·  Infantil B = 8 a 11 anos
+
+·  Juvenil A = 12 a 13 anos
+
+·  Juvenil B = 14 a 17 anos
+
+· Adultos = Maiores de 18 anos
+
+Algoritmo_Idade
+
+var Infatil_A, Infantil_B, Juvenil_A, Juvenil_B, Adultos : CARACTER
+var Idade : Inteiro
+
+INICIO
+
+Escreva(" Digite a idade do nadador")
+Leia(Idade)
+SE(5<=Idade<=7) ENTÃO
+Escreva("Infantil A")
+SENÃO
+SE(8<=Idade<=11) ENTÃO
+Escreva("Infantil B")
+SENÃO
+SE(12<=Idade<=13) ENTÃO
+Escreva("Juvenil A")
+SE(14<=Idade<=17) ENTÃO
+Escreva("Juvenil B")
+SENÃO
+Escreva("Adulto")
+
+FIM-SE
+
+FIM
+
+9-    Elaborar um programa que leia três valores para os lados de um triângulo, considerando lados como A, B e C. Verificar se os lados fornecidos formam um triângulo, e se for esta condição verdadeira, deve ser indicado o tipo de triângulo formado: isósceles, escaleno ou equilátero.
+
+ 
+
+10-   Faça um algoritmo que receba a matrícula e duas notas do aluno. Calcular a média e mostrar a matrícula do aluno com as seguintes mensagens de acordo com os dados a seguir:
+
+    MÉDIA MENSAGEM  Média > 7,0 “Aluno Aprovado”
+
+    Média = 7,0 “Aluno em Recuperação”
+
+    Média < 7,0 “Aluno Reprovado”
+
+Algoritmo_Media 
+
+var Matricula : Inteira
+var Nota1, Nota2, Media : REAL
+
+INICIO
+
+Escreva("Digite o número da matrícula")
+Leia(Matricula)
+Escreva(" Digite a nota 1")
+Leia(Nota1)
+Escreva(" Digite a nota 2")
+Leia(Nota2)
+MEDIA ← (Nota1+Nota2)/2
+SE(Media>7) ENTÃO
+Escreva(+Matricula, +Media "Aluno Aprovado")
+SENÃO
+SE(Media=7) ENTÃO
+Escreva(+Matricula, +Media "Aluno em Recuperação")
+SENÃO
+Escreva(+Matricula, +Media "Aluno Reprovado")
+
+FIM-SE
+
+FIM
+
+
+11- Escreva um algoritmo que receba o código, o preço e o tamanho da camiseta. 
+Sabe-se que de acordo com o tamanho há um desconto conforme tabela abaixo. 
+Informar o código, e o valor do desconto. 
+TAMANHO DESCONTO “G” 10%, “M” 20%, “P” 30%. 
+O algoritmo deverá informar como saída o código, o tamanho da camisa, valor da camisa sem o desconto e com o desconto.     
+ 
+Algoritmo_Camiseta
+
+var Codigo : INTEIRO
+var PrecoDaCamiseta, Resultado : REAL
+var TamanhoDaCamiseta : CARACTER
+
+INICIO
+
+Escreva(" Digite o Código da camiseta")
+Leia(Codigo)
+Escreva(" Digite o preço da camiseta")
+Leia(PrecoDaCamiseta)
+Escreva(" Escreva o tamanho da camiseta")
+Leia(TamanhoDaCamiseta)
+SE(TamanhoDaCamiseta = G) ENTÃO
+Resultado ← PrecoDaCamiseta - (10/100)
+Escreva("Código:" +Codigo, "Tamanho:" +TamanhoDaCamiseta, "Valor sem desconto:" +PrecoDaCamiseta, "Valor com desconto:" +Resultado
+SENÃO
+SE(TamanhoDaCamiseta = M) ENTÃO
+Resultado ← PrecoDaCamiseta - (20/100)
+Escreva("Código:" +Codigo, "Tamanho:" +TamanhoDaCamiseta, "Valor sem desconto:" +PrecoDaCamiseta, "Valor com desconto:" +Resultado
+SENÃO
+Resultado ← PrecoDaCamiseta - (30/100)
+Escreva("Código:" +Codigo, "Tamanho:" +TamanhoDaCamiseta, "Valor sem desconto:" +PrecoDaCamiseta, "Valor com desconto:" +Resultado
+
+FIM-SE
+FIM
+
+
+12  Crie um algoritmo para cálculo do imposto de renda sobre o salário tomando por base as seguintes regras:
+
+salário até R$ 1.200,00: isento de Imposto de Renda;
+
+salário de R$ 1.201,00 a R$ 2.500,00: aplicar alíquota de 5%;
+
+salário de R$ 2.501,00 a R$ 4.000,00: aplicar alíquota de 8%;
+
+salário de R$ 4.001,00 a R$ 7.000,00: aplicar alíquota de 12%;
+
+salário acima de R$ 7.000,00: aplicar alíquota de 27,5%;
+
+Com saída informe o salário e o valor do imposto a ser pago.                  
+
+Algoritmo_Imposto
+
+var Salario, Valor_Imposto : REAL
+
+INICIO
+
+Escreva(" Informe o valor do seu salário")
+Leia(Salario)
+SE(Salario<=1200) ENTÃO
+Valor_Imposto ← 0
+Escreva("O salário é:" +Salario " e o imposto a ser pago é:" +Valor_Imposto)
+SENÃO
+SE(1201<=Salario<=2500) ENTÃO
+Valor_Imposto ← 1201,00 * (5/100)
+Escreva("O salário é:" +Salario " e o imposto a ser pago é:" +Valor_Imposto)
+SENÃO
+SE(2501<=Salario<=4000) ENTÃO
+Valor_Imposto ← 2501,00 * (8/100)
+Escreva("O salário é:" +Salario " e o imposto a ser pago é:" +Valor_Imposto)
+SENÃO
+SE(4001<=Salario<=7000) ENTÃO
+Valor_Imposto ← 1201,00 * (12/100)
+Escreva("O salário é:" +Salario " e o imposto a ser pago é:" +Valor_Imposto)
+SENÃO
+Valor_Imposto ← 7001 * (27,5/100)
+Escreva("O salário é:" +Salario " e o imposto a ser pago é:" +Valor_Imposto)
+
+FIM-SE
+FIM
+                                                 
+
+
+13  - Indique na linha de resposta a expressão aritmética a ser calculada a partir da tomada de decisão composta em análise. Considere os seguintes valores: A=2, B=3, C=5 e D=9.
+ Não é necessário calcular os valores da variável.
+
+
+a) Resposta: SE = X ← (2 + 3) 
+
+se não(D > 5) então
+
+      X ← (A + B) * D
+
+senão
+
+      X ← (A - B) / C
+
+fim_se
+
+escreva X
+
+ 
+
+b) Resposta: SE = X ← (2 + 3) / 9 * ( 5 + 9)
+
+se (A > 2) .e. (B < 7) então
+
+     X ← (A + 2) * (B - 2)
+
+senão
+
+X ← (A + B) / D * (C + D)
+
+fim_se
+
+escreva X
+
+ 
+
+14) Elabore um algoritmo que após receber números de 1 a 7 indique qual é o dia da semana correspondente. Por exemplo 1 - DOMINGO;2-SEGUNDA, etc...
+
+Algoritmo_Dia_Da_Semana
+
+var Numero : Inteiro
+
+Inicio
+
+Escreva(" Digite um Número de 1 a 7")
+Leia(Numero)
+SE( Numero = 1) Então
+Escreva("Esse dia é domingo")
+SENÃO
+SE( Numero = 2) Então
+Escreva("Esse dia é segunda")
+SENÃO
+SE( Numero = 3) Então
+Escreva("Esse dia é terça")
+SENÃO
+SE( Numero = 4) Então
+Escreva("Esse dia é quarta")
+SENÃO
+SE( Numero = 5) Então
+Escreva("Esse dia é quinta")
+SENÃO
+SE( Numero = 6) Então
+Escreva("Esse dia é sexta")
+SENÃO
+SE( Numero = 7) Então
+Escreva("Esse dia é sábado")
+
+FIM-SE
+FIM
+
+(deepseek)
+
+15) Elabore um algoritmo que leia o salário e profissão e caso a profissão seja de "Técnico", reajuste o salário informado em 15%;
+ No caso da profissão ser "Gerente" o reajuste do salário será de 13%, nos demais casos o aumento será de 11%.
+ Como saída o algoritmo deverá mostrar a profissão, o salário atual e o salário reajustado.
+
+Algoritmo_Reajuste
+
+var Salario, Resultado : Real
+var Profissao : Caracter
+
+Escreva(" Digite seu saláario")
+Leia(Salario)
+Escreva(" Escreva sua profissão")
+Leia(Profissao)
+SE(Profissao=Técnico) ENTÃO
+Resultado ← Salario + (Salario * (15/100))
+Escreva("Sua profissão é:" +Profissão ", Seu salário atual é:" +Salario ", Seu salário reajustado é:" +Resultado
+SENÃO
+SE(Profissao=Gerente) ENTÃO
+Resultado ← Salario + (Salario * (13/100))
+Escreva("Sua profissão é:" +Profissão ", Seu salário atual é:" +Salario ", Seu salário reajustado é:" +Resultado
+SENÃO
+Resultado ← Salario + (Salario * (11/100))
+Escreva("Sua profissão é:" +Profissão ", Seu salário atual é:" +Salario ", Seu salário reajustado é:" +Resultado
+
+FIM-SE
+FIM
+
+
+
+
+←
+
+
+
